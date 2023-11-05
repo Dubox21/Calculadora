@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculadora Web</title>
+    <script src="misScripts.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div align="center" class="base">
+        <h1 >&#x1F4F1; Calculadora</h1>
+            <input type="text" id="num1">
+            <input type="text" id="num2">
+            <button onclick="borrar()" id="clear">C</button>
+        <br><br>
+        <div>
+            <button onclick="suma()">&#x2795;</button>
+            <button onclick="resta()">&#x2796;</button>
+            <button onclick="multiplicacion()">&#x2716;</button>
+            <button onclick="division()">&#x2797;</button>
+        </div>
+        <br>
+        <div class="calculos">
+            <button onclick="raizCuadrada()">Raiz</button>
+            <button onclick="potencia()">Potencia</button>
+            <br>
+            <button onclick="valorAbs()">abs</button>
+            <button onclick="random()">Random</button>
+        </div>
+        <br>
+        <div class="redondeos">
+            <button onclick="round()">Round</button>
+            <button onclick="floor()">Floor</button>
+            <button onclick="ceil()">Ceil</button>
+        </div>
+        <br>
+            =
+            <input align="center" type="text" id="resultado">
+    </div>
+</body>
+
+</html>
